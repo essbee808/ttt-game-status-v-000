@@ -61,17 +61,7 @@ def draw?(board)
 end
 
 def over?(board)
-  over = true
-  if draw?(board) == true
-    return true
-  
-  if won?(board) == true && (full?(board) == false || full?(board) == true)
-    return true
-  elsif board_index == " "
-    return false
-  end
-end
-  return over
+  draw
 end
 
 def winner(board)
